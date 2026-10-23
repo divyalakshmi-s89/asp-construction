@@ -3,7 +3,7 @@ const CONFIG = {
   verified: true,
   phone: "+91 9944206020",
   email: "Aspconstructionpvt@gmail.com",
-  address: " Madurai, Tamil Nadu, India",
+  address: " Sikanthar Savadi,Madurai, Tamil Nadu, India",
   endpoint: "/api/enquiries",
   testimonials: []
 };
@@ -49,7 +49,7 @@ const SERVICES = [ // on:0 hides a service. Proposed: the company must confirm b
   { on: 1, k: "civil", t: "Civil and Structural Work", d: "Civil construction for new and existing buildings.", p: ["Civil construction activities", "Structural engineering only where qualified professionals are involved"] }
 ].filter(s => s.on);
 const LOCS = [
-  { n: "Madurai", s: "Tamil Nadu" }, { n: "Rajapalayam", s: "Tamil Nadu" },
+  { n: "Madurai", s: "Tamil Nadu" }, { n: "Rajapalayam", s: "Tamil Nadu" },{ n: "Coimbatore", s: "Tamil Nadu" },
   { n: "Chennai", s: "Tamil Nadu" }, { n: "Bengaluru", s: "Karnataka" }
 ];
 const NAV = [["home", "Home"], ["about", "About Us"], ["services", "Services"], ["contact", "Contact"]];
