@@ -25,7 +25,9 @@ const hero = `<section id="home" class="hero" aria-roledescription="carousel" ar
 
 const highlights = `<div class="hl"><div class="wrap grid">${HIGHLIGHTS.map(h => `<div class="card"><h3>${h[0]}</h3><p style="margin:0">${h[1]}</p></div>`).join("")}</div></div>`;
 
-const about = sec("about", "", `<div class="split"><div><h2>About Us</h2><p>ASP Construction is a construction company serving homeowners, property owners and commercial clients in Tamil Nadu and Bengaluru. Iso 9001-2015</p><ul class="tags"><li>Quality workmanship</li><li>Site safety</li><li>Transparency</li><li>Customer satisfaction</li></ul><a class="btn" href="#services" style="background:var(--ink);border-color:var(--ink);color:#fff">View Services</a></div><div class="ph">${pic(IMAGES.about, "Building under construction")}</div></div>`);
+const about = sec("about", "", `<div class="split"><div><h2>About Us</h2><p> ASP Construction provides reliable, high-quality construction solutions for residential and commercial projects across Tamil Nadu and Bengaluru. We focus on quality, innovation, transparency, and customer satisfaction, building strong foundations and lasting relationships through professional construction services.
+
+ISO 9001:2015 Certified | Quality Construction | Customer Satisfaction</p><ul class="tags"><li>Quality workmanship</li><li>Site safety</li><li>Transparency</li><li>Customer satisfaction</li></ul><a class="btn" href="#services" style="background:var(--ink);border-color:var(--ink);color:#fff">View Services</a></div><div class="ph">${pic(IMAGES.about, "Building under construction")}</div></div>`);
 
 const services = sec("services", "alt", `<h2>Our Services</h2><p class="lead"><div class="grid">${SERVICES.map(s => `<article class="card k"><div class="ph">${pic(IMAGES.services[s.k], s.t)}</div><div class="body"><h3>${esc(s.t)}</h3><p>${esc(s.d)}</p><ul>${s.p.map(x => `<li>${esc(x)}</li>`).join("")}</ul></div></article>`).join("")}</div>`);
 
