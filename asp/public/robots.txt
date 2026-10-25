@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://asp-construction-lk62.onrender.com/sitemap.xml
