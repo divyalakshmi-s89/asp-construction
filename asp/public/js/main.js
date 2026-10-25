@@ -44,7 +44,9 @@ const contact = sec("contact", "alt", `<h2>Request a Quote</h2><p class="lead">T
 <div><label for="d">Expected start date (optional)</label><input id="d" type="date"></div>
 <div><label for="t">Project description</label><textarea id="t" rows="5"></textarea><div class="er" id="e-t"></div></div>
 <input id="hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
-<div><button class="btn" id="go" type="submit">Request a Quote</button></div><div id="res" role="status" aria-live="polite"></div></form>`);
+
+<div>
+  <p style="font-size:.9rem;color:var(--mute)">By submitting, you agree that ASP Construction may use these details to respond to your enquiry. See our <a href="/privacy.html">Privacy Notice</a>.</p><button class="btn" id="go" type="submit">Request a Quote</button></div><div id="res" role="status" aria-live="polite"></div></form>`);
 
 
 $("#app").innerHTML = hero + highlights + about + services + clients + band + contact;
@@ -110,6 +112,7 @@ $("#foot").innerHTML = `
     <p>© ${new Date().getFullYear()} ASP Construction.
        All Rights Reserved.</p>
     <a href="#home">Back to Top ↑</a>
+      <a href="/privacy.html">Privacy Notice</a>
   </div>
 `;
 
