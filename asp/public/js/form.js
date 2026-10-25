@@ -11,8 +11,7 @@ $("#f").onsubmit=async e=>{e.preventDefault();const v=id=>$("#"+id).value.trim()
  if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v("m")))er.m="Enter a valid email address.";
  if(!v("s"))er.s="Choose a service.";if(!v("l"))er.l="Choose a location.";if(!v("y"))er.y="Choose a project type.";
  if(v("t").length<10)er.t="Describe your project in at least 10 characters.";
- if(!$("#c").checked)er.c="Please agree so we can respond to you.";
- ["n","p","m","s","l","y","t","c"].forEach(i=>{$("#e-"+i).textContent=er[i]||"";$("#"+i).setAttribute("aria-invalid",!!er[i])});
+ ["n","p","m","s","l","y","t"].forEach(i=>{$("#e-"+i).textContent=er[i]||"";$("#"+i).setAttribute("aria-invalid",!!er[i])});
  if(Object.keys(er).length){res.className="msg bad";res.textContent="Please fix the highlighted fields.";document.querySelector("[aria-invalid=true]").focus();return}
  if(Date.now()-last<8000)return;
  const data={name:v("n"),phone:v("p"),email:v("m"),service:v("s"),location:v("l"),type:v("y"),budget:v("b"),start:v("d"),details:v("t"),website:v("hp")},btn=$("#go");
